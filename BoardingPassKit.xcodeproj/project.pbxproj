@@ -8,12 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		24B3F50B1FF3E06F002E489B /* BoardingPassKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B3F5091FF3E06F002E489B /* BoardingPassKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24B3F5141FF3E22F002E489B /* BPKBoardingPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5131FF3E22F002E489B /* BPKBoardingPass.swift */; };
+		24B3F5161FF3E2AE002E489B /* BPKFlightSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5151FF3E2AE002E489B /* BPKFlightSegment.swift */; };
+		24B3F5191FF71893002E489B /* BPKParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5181FF71893002E489B /* BPKParser.swift */; };
+		24B3F51C1FF7C49B002E489B /* BPKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F51B1FF7C49B002E489B /* BPKError.swift */; };
+		24B3F5281FFE90C0002E489B /* BoardingPassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B3F5061FF3E06F002E489B /* BoardingPassKit.framework */; };
+		24B3F52E1FFE90C6002E489B /* BoardingPassExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F51E1FFE9086002E489B /* BoardingPassExampleTests.swift */; };
+		24B3F5301FFFBA00002E489B /* BPKBaggageTagRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F52F1FFFBA00002E489B /* BPKBaggageTagRange.swift */; };
+		24B3F5331FFFCB09002E489B /* BaggageTagRangeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5311FFFCAEB002E489B /* BaggageTagRangeExampleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24B3F5291FFE90C0002E489B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24B3F4FD1FF3E06F002E489B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24B3F5051FF3E06F002E489B;
+			remoteInfo = BoardingPassKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		24B3F5061FF3E06F002E489B /* BoardingPassKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoardingPassKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B3F5091FF3E06F002E489B /* BoardingPassKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardingPassKit.h; sourceTree = "<group>"; };
 		24B3F50A1FF3E06F002E489B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B3F5131FF3E22F002E489B /* BPKBoardingPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKBoardingPass.swift; sourceTree = "<group>"; };
+		24B3F5151FF3E2AE002E489B /* BPKFlightSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKFlightSegment.swift; sourceTree = "<group>"; };
+		24B3F5181FF71893002E489B /* BPKParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKParser.swift; sourceTree = "<group>"; };
+		24B3F51B1FF7C49B002E489B /* BPKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKError.swift; sourceTree = "<group>"; };
+		24B3F51E1FFE9086002E489B /* BoardingPassExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassExampleTests.swift; sourceTree = "<group>"; };
+		24B3F5231FFE90C0002E489B /* BoardingPassKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardingPassKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B3F5271FFE90C0002E489B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B3F52F1FFFBA00002E489B /* BPKBaggageTagRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKBaggageTagRange.swift; sourceTree = "<group>"; };
+		24B3F5311FFFCAEB002E489B /* BaggageTagRangeExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaggageTagRangeExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +51,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		24B3F5201FFE90C0002E489B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B3F5281FFE90C0002E489B /* BoardingPassKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,14 +66,17 @@
 			isa = PBXGroup;
 			children = (
 				24B3F5081FF3E06F002E489B /* Source */,
+				24B3F51D1FFE9075002E489B /* Test */,
 				24B3F5071FF3E06F002E489B /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		24B3F5071FF3E06F002E489B /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				24B3F5061FF3E06F002E489B /* BoardingPassKit.framework */,
+				24B3F5231FFE90C0002E489B /* BoardingPassKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +84,41 @@
 		24B3F5081FF3E06F002E489B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				24B3F51A1FF7C48E002E489B /* Parser */,
+				24B3F5121FF3E218002E489B /* Models */,
 				24B3F5091FF3E06F002E489B /* BoardingPassKit.h */,
 				24B3F50A1FF3E06F002E489B /* Info.plist */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		24B3F5121FF3E218002E489B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24B3F5131FF3E22F002E489B /* BPKBoardingPass.swift */,
+				24B3F5151FF3E2AE002E489B /* BPKFlightSegment.swift */,
+				24B3F52F1FFFBA00002E489B /* BPKBaggageTagRange.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24B3F51A1FF7C48E002E489B /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				24B3F5181FF71893002E489B /* BPKParser.swift */,
+				24B3F51B1FF7C49B002E489B /* BPKError.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		24B3F51D1FFE9075002E489B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				24B3F5311FFFCAEB002E489B /* BaggageTagRangeExampleTests.swift */,
+				24B3F51E1FFE9086002E489B /* BoardingPassExampleTests.swift */,
+				24B3F5271FFE90C0002E489B /* Info.plist */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,18 +153,41 @@
 			productReference = 24B3F5061FF3E06F002E489B /* BoardingPassKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		24B3F5221FFE90C0002E489B /* BoardingPassKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24B3F52B1FFE90C0002E489B /* Build configuration list for PBXNativeTarget "BoardingPassKitTests" */;
+			buildPhases = (
+				24B3F51F1FFE90C0002E489B /* Sources */,
+				24B3F5201FFE90C0002E489B /* Frameworks */,
+				24B3F5211FFE90C0002E489B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24B3F52A1FFE90C0002E489B /* PBXTargetDependency */,
+			);
+			name = BoardingPassKitTests;
+			productName = BoardingPassKitTests;
+			productReference = 24B3F5231FFE90C0002E489B /* BoardingPassKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		24B3F4FD1FF3E06F002E489B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = invliD;
 				TargetAttributes = {
 					24B3F5051FF3E06F002E489B = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
+					};
+					24B3F5221FFE90C0002E489B = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -113,12 +205,20 @@
 			projectRoot = "";
 			targets = (
 				24B3F5051FF3E06F002E489B /* BoardingPassKit */,
+				24B3F5221FFE90C0002E489B /* BoardingPassKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		24B3F5041FF3E06F002E489B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24B3F5211FFE90C0002E489B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,10 +232,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B3F51C1FF7C49B002E489B /* BPKError.swift in Sources */,
+				24B3F5301FFFBA00002E489B /* BPKBaggageTagRange.swift in Sources */,
+				24B3F5161FF3E2AE002E489B /* BPKFlightSegment.swift in Sources */,
+				24B3F5141FF3E22F002E489B /* BPKBoardingPass.swift in Sources */,
+				24B3F5191FF71893002E489B /* BPKParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24B3F51F1FFE90C0002E489B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B3F5331FFFCB09002E489B /* BaggageTagRangeExampleTests.swift in Sources */,
+				24B3F52E1FFE90C6002E489B /* BoardingPassExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24B3F52A1FFE90C0002E489B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24B3F5051FF3E06F002E489B /* BoardingPassKit */;
+			targetProxy = 24B3F5291FFE90C0002E489B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		24B3F50C1FF3E06F002E489B /* Debug */ = {
@@ -262,7 +384,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BoardingPassKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.invlid.BoardingPassKit;
@@ -286,13 +408,43 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BoardingPassKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.invlid.BoardingPassKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24B3F52C1FFE90C0002E489B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F3N5B69H2L;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.invlid.BoardingPassKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24B3F52D1FFE90C0002E489B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F3N5B69H2L;
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.invlid.BoardingPassKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,6 +467,15 @@
 			buildConfigurations = (
 				24B3F50F1FF3E06F002E489B /* Debug */,
 				24B3F5101FF3E06F002E489B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24B3F52B1FFE90C0002E489B /* Build configuration list for PBXNativeTarget "BoardingPassKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B3F52C1FFE90C0002E489B /* Debug */,
+				24B3F52D1FFE90C0002E489B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
