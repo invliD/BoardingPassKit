@@ -95,7 +95,10 @@ public class BPKBoardingPass {
 			guard let tagData = try parser.getSubData(13) else {
 				break
 			}
-			baggageTagRanges.append(try BPKBaggageTagRange(data: tagData))
+			guard let tagRange = try BPKBaggageTagRange(data: tagData) else {
+				continue
+			}
+			baggageTagRanges.append(tagRange)
 		}
 
 		try parser.die()
