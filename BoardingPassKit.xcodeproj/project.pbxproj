@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24AEAF8D2055151100311ED5 /* BoardingPassExamplev4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */; };
 		24B3F50B1FF3E06F002E489B /* BoardingPassKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B3F5091FF3E06F002E489B /* BoardingPassKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24B3F5141FF3E22F002E489B /* BPKBoardingPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5131FF3E22F002E489B /* BPKBoardingPass.swift */; };
 		24B3F5161FF3E2AE002E489B /* BPKFlightSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5151FF3E2AE002E489B /* BPKFlightSegment.swift */; };
 		24B3F5191FF71893002E489B /* BPKParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5181FF71893002E489B /* BPKParser.swift */; };
 		24B3F51C1FF7C49B002E489B /* BPKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F51B1FF7C49B002E489B /* BPKError.swift */; };
 		24B3F5281FFE90C0002E489B /* BoardingPassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B3F5061FF3E06F002E489B /* BoardingPassKit.framework */; };
-		24B3F52E1FFE90C6002E489B /* BoardingPassExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F51E1FFE9086002E489B /* BoardingPassExampleTests.swift */; };
+		24B3F52E1FFE90C6002E489B /* BoardingPassExamplev5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F51E1FFE9086002E489B /* BoardingPassExamplev5Tests.swift */; };
 		24B3F5301FFFBA00002E489B /* BPKBaggageTagRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F52F1FFFBA00002E489B /* BPKBaggageTagRange.swift */; };
 		24B3F5331FFFCB09002E489B /* BaggageTagRangeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5311FFFCAEB002E489B /* BaggageTagRangeExampleTests.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		24AEAF892054D45A00311ED5 /* BoardingPassKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BoardingPassKit.podspec; sourceTree = "<group>"; };
+		24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassExamplev4Tests.swift; sourceTree = "<group>"; };
 		24B3F5061FF3E06F002E489B /* BoardingPassKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoardingPassKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B3F5091FF3E06F002E489B /* BoardingPassKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardingPassKit.h; sourceTree = "<group>"; };
 		24B3F50A1FF3E06F002E489B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,7 +39,7 @@
 		24B3F5151FF3E2AE002E489B /* BPKFlightSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKFlightSegment.swift; sourceTree = "<group>"; };
 		24B3F5181FF71893002E489B /* BPKParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKParser.swift; sourceTree = "<group>"; };
 		24B3F51B1FF7C49B002E489B /* BPKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKError.swift; sourceTree = "<group>"; };
-		24B3F51E1FFE9086002E489B /* BoardingPassExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassExampleTests.swift; sourceTree = "<group>"; };
+		24B3F51E1FFE9086002E489B /* BoardingPassExamplev5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassExamplev5Tests.swift; sourceTree = "<group>"; };
 		24B3F5231FFE90C0002E489B /* BoardingPassKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardingPassKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B3F5271FFE90C0002E489B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24B3F52F1FFFBA00002E489B /* BPKBaggageTagRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKBaggageTagRange.swift; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				24B3F5311FFFCAEB002E489B /* BaggageTagRangeExampleTests.swift */,
-				24B3F51E1FFE9086002E489B /* BoardingPassExampleTests.swift */,
+				24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */,
+				24B3F51E1FFE9086002E489B /* BoardingPassExamplev5Tests.swift */,
 				24B3F5271FFE90C0002E489B /* Info.plist */,
 			);
 			path = Test;
@@ -246,8 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AEAF8D2055151100311ED5 /* BoardingPassExamplev4Tests.swift in Sources */,
 				24B3F5331FFFCB09002E489B /* BaggageTagRangeExampleTests.swift in Sources */,
-				24B3F52E1FFE90C6002E489B /* BoardingPassExampleTests.swift in Sources */,
+				24B3F52E1FFE90C6002E489B /* BoardingPassExamplev5Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

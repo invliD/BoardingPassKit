@@ -1,31 +1,11 @@
 import BoardingPassKit
 import XCTest
 
-class BoardingPassExampleTests: XCTestCase {
+class BoardingPassExamplev5Tests: XCTestCase {
 	private let securityData = "GIWVC5EH7JNT684FVNJ91W2QA4DVN5J8K4F0L0GEQ3DF5TGBN8709HKT5D3DW3GBHFCVHMY7J5T6HFR41W2QA4DVN5J8K4F0L0GE"
 		.data(using: .ascii)!
 
-	func testExample1() throws {
-		let data = ("M1DESMARAIS/LUC       EABC123 YULFRAAC 0834 326J001A0025 100^164").data(using: .ascii)! + securityData
-		let boardingPass = try BPKBoardingPass(data: data)
-		XCTAssertEqual(boardingPass.legs.count, 1)
-		XCTAssertEqual(boardingPass.firstName, "LUC")
-		XCTAssertEqual(boardingPass.lastName, "DESMARAIS")
-		XCTAssertEqual(boardingPass.securityType, "1")
-		XCTAssertEqual(boardingPass.securityData, securityData)
-
-		let leg = boardingPass.legs[0]
-		XCTAssertEqual(leg.pnrCode, "ABC123")
-		XCTAssertEqual(leg.fromIATA, "YUL")
-		XCTAssertEqual(leg.toIATA, "FRA")
-		XCTAssertEqual(leg.operatingAirlineIATA, "AC")
-		XCTAssertEqual(leg.flightNumber, "0834")
-		XCTAssertEqual(leg.dayOfYear, 326)
-		XCTAssertEqual(leg.cabinCode, "J")
-		XCTAssertEqual(leg.seatNumber, "001A")
-		XCTAssertEqual(leg.checkinSequence, "0025")
-		XCTAssertEqual(leg.passengerStatus, "1")
-	}
+	// example 1 has not changed since v4
 
 	func testExample2() throws {
 		let data = "M1DESMARAIS/LUC       EAB12C3 YULFRAAC 0834 326J003A0027 167>5321WW1325BAC 0014123456002001412346700100141234789012A0141234567890 1AC AC 1234567890123    4PCYLX58Z^164".data(using: .ascii)! + securityData
