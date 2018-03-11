@@ -46,7 +46,7 @@ public class BPKBoardingPass {
 						throw BPKError.invalidVersionNumberIndicator
 					}
 					let version = try conditionalParser.readMandatoryString(1)
-					guard ["3", "4", "5"].contains(version) else {
+					guard ["3", "4", "5", "6"].contains(version) else {
 						throw BPKError.unsupportedVersion
 					}
 
