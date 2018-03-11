@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24AEAF8D2055151100311ED5 /* BoardingPassExamplev4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */; };
+		24AEAF8F205517F800311ED5 /* BoardingPassExamplev3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEAF8E205517F800311ED5 /* BoardingPassExamplev3Tests.swift */; };
 		24B3F50B1FF3E06F002E489B /* BoardingPassKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B3F5091FF3E06F002E489B /* BoardingPassKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24B3F5141FF3E22F002E489B /* BPKBoardingPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5131FF3E22F002E489B /* BPKBoardingPass.swift */; };
 		24B3F5161FF3E2AE002E489B /* BPKFlightSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3F5151FF3E2AE002E489B /* BPKFlightSegment.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		24AEAF892054D45A00311ED5 /* BoardingPassKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BoardingPassKit.podspec; sourceTree = "<group>"; };
 		24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassExamplev4Tests.swift; sourceTree = "<group>"; };
+		24AEAF8E205517F800311ED5 /* BoardingPassExamplev3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassExamplev3Tests.swift; sourceTree = "<group>"; };
 		24B3F5061FF3E06F002E489B /* BoardingPassKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoardingPassKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B3F5091FF3E06F002E489B /* BoardingPassKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoardingPassKit.h; sourceTree = "<group>"; };
 		24B3F50A1FF3E06F002E489B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				24B3F5311FFFCAEB002E489B /* BaggageTagRangeExampleTests.swift */,
+				24AEAF8E205517F800311ED5 /* BoardingPassExamplev3Tests.swift */,
 				24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */,
 				24B3F51E1FFE9086002E489B /* BoardingPassExamplev5Tests.swift */,
 				24B3F5271FFE90C0002E489B /* Info.plist */,
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AEAF8F205517F800311ED5 /* BoardingPassExamplev3Tests.swift in Sources */,
 				24AEAF8D2055151100311ED5 /* BoardingPassExamplev4Tests.swift in Sources */,
 				24B3F5331FFFCB09002E489B /* BaggageTagRangeExampleTests.swift in Sources */,
 				24B3F52E1FFE90C6002E489B /* BoardingPassExamplev5Tests.swift in Sources */,
