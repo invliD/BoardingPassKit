@@ -26,7 +26,7 @@ class BPKParser {
 			return nil
 		}
 		guard let rawString = String(data: data, encoding: String.Encoding.ascii) else {
-			throw BPKError.cannotParseString
+			throw BPKError.cannotParseString(data)
 		}
 		let trimmedString = rawString.trimmingCharacters(in: CharacterSet.whitespaces)
 		return trimmedString.count == 0 ? nil : trimmedString
@@ -41,7 +41,7 @@ class BPKParser {
 		} else if str == "N" {
 			return false
 		} else {
-			throw BPKError.cannotParseBool
+			throw BPKError.cannotParseBool(str)
 		}
 	}
 
@@ -51,7 +51,7 @@ class BPKParser {
 			throw BPKError.mandatoryFieldBlank
 		}
 		guard let number = UInt32(str) else {
-			throw BPKError.cannotParseNumber
+			throw BPKError.cannotParseNumber(str)
 		}
 		return number
 	}
@@ -62,7 +62,7 @@ class BPKParser {
 			return nil
 		}
 		guard let number = UInt32(str) else {
-			throw BPKError.cannotParseNumber
+			throw BPKError.cannotParseNumber(str)
 		}
 		return number
 	}
@@ -73,7 +73,7 @@ class BPKParser {
 			throw BPKError.mandatoryFieldBlank
 		}
 		guard let number = UInt32(str, radix: 16) else {
-			throw BPKError.cannotParseNumber
+			throw BPKError.cannotParseNumber(str)
 		}
 		return number
 	}
@@ -102,7 +102,7 @@ class BPKParser {
 
 	public func die() throws {
 		if remaining > 0 {
-			throw BPKError.tooMuchData
+			throw BPKError.tooMuchData(remaining)
 		}
 	}
 }

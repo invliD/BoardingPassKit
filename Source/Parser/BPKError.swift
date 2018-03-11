@@ -1,13 +1,13 @@
 public enum BPKError: Error {
-	case cannotParseBool
-	case cannotParseNumber
-	case cannotParseString
+	case cannotParseBool(String)
+	case cannotParseNumber(String)
+	case cannotParseString(Data)
 	case mandatoryFieldBlank
 	case noMoreData
-	case tooMuchData
+	case tooMuchData(Int)
 
-	case invalidFormatCode
-	case invalidSecurityIndicator
-	case invalidVersionNumberIndicator
-	case unsupportedVersion
+	case invalidFormatCode(String)
+	case invalidSecurityIndicator(String)
+	case invalidVersionNumberIndicator(String)
+	case unsupportedVersion(String)
 }

@@ -18,7 +18,7 @@ public class BPKBoardingPass {
 
 		let formatCode = try parser.readMandatoryString(1)
 		guard formatCode == "M" else {
-			throw BPKError.invalidFormatCode
+			throw BPKError.invalidFormatCode(formatCode)
 		}
 
 		let numberOfLegs = try parser.readMandatoryNumber(1)
@@ -42,12 +42,13 @@ public class BPKBoardingPass {
 				let conditionalParser = try parser.getSubParser(Int(conditionalLength))
 				// parse unique fields in first segment only
 				if i == 1 {
-					guard try conditionalParser.readMandatoryString(1) == ">" else {
-						throw BPKError.invalidVersionNumberIndicator
+					let versionNumberIndicator = try conditionalParser.readMandatoryString(1)
+					guard versionNumberIndicator == ">" else {
+						throw BPKError.invalidVersionNumberIndicator(versionNumberIndicator)
 					}
 					let version = try conditionalParser.readMandatoryString(1)
 					guard ["3", "4", "5", "6"].contains(version) else {
-						throw BPKError.unsupportedVersion
+						throw BPKError.unsupportedVersion(version)
 					}
 
 					let conditionalUniqueLength = try conditionalParser.readMandatoryHexNumber(2)
@@ -69,7 +70,7 @@ public class BPKBoardingPass {
 			// parse unique fields in first segment only
 			let securityIndicator = try parser.readMandatoryString(1)
 			guard securityIndicator == "^" else {
-				throw BPKError.invalidSecurityIndicator
+				throw BPKError.invalidSecurityIndicator(securityIndicator)
 			}
 			securityType = try parser.readMandatoryString(1)
 			let securityLength = try parser.readMandatoryHexNumber(2)
