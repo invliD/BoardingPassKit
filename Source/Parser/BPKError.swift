@@ -1,4 +1,4 @@
-enum BPKError: Error {
+public enum BPKError: Error {
 	case cannotParseBool
 	case cannotParseNumber
 	case cannotParseString
