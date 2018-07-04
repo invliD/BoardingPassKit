@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name         = "BoardingPassKit"
-	s.version      = "0.1.1"
+	s.version      = "0.2.0"
 	s.summary      = "A library to parse the contents of airline boarding pass barcodes."
 	s.description  = <<-DESC
 		BoardingPassKit allows parsing the content of airline boarding pass barcodes.
