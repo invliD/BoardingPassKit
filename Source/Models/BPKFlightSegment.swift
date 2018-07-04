@@ -3,8 +3,7 @@ public class BPKFlightSegment {
     public var cabinCode: String
     public var checkinSequence: String
     public var dayOfYear: UInt32
-    public var documentAirlineNumeric: UInt32?
-    public var documentNumber: String?
+    public var documentNumber: BPKDocumentNumber?
     public var fastTrack: Bool?
     public var flightNumber: String
     public var freeBaggageAllowance: String?
@@ -38,21 +37,22 @@ public class BPKFlightSegment {
 		try parser.die()
     }
 
-    public func parseConditionalFields(data: Data) throws {
-        let parser = BPKParser(data: data)
+	public func parseConditionalFields(data: Data) throws {
+		let parser = BPKParser(data: data)
 
-        documentAirlineNumeric = try parser.readNumber(3)
-        documentNumber = try parser.readString(10)
-        selectee = try parser.readString(1)
-        internationalDocumentVerification = try parser.readString(1)
-        marketingAirlineIATA = try parser.readString(3)
-        frequentFlyerAirline = try parser.readString(3)
-        frequentFlyerNumber = try parser.readString(16)
-        idAdIndicator = try parser.readString(1)
-        freeBaggageAllowance = try parser.readString(3)
+		if let airlineNumeric = try parser.readNumber(3), let serialNumber = try parser.readString(10) {
+			documentNumber = BPKDocumentNumber(airlineNumeric: airlineNumeric, serialNumber: serialNumber)
+		}
+		selectee = try parser.readString(1)
+		internationalDocumentVerification = try parser.readString(1)
+		marketingAirlineIATA = try parser.readString(3)
+		frequentFlyerAirline = try parser.readString(3)
+		frequentFlyerNumber = try parser.readString(16)
+		idAdIndicator = try parser.readString(1)
+		freeBaggageAllowance = try parser.readString(3)
 		// <v5 won't find fast track
-        fastTrack = try parser.readBool()
+		fastTrack = try parser.readBool()
 
 		try parser.die()
-    }
+	}
 }

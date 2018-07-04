@@ -50,8 +50,12 @@ class BoardingPassExamplev5Tests: XCTestCase {
 		XCTAssertEqual(leg.checkinSequence, "0027")
 		XCTAssertEqual(leg.passengerStatus, "1")
 
-		XCTAssertEqual(leg.documentAirlineNumeric, 14)
-		XCTAssertEqual(leg.documentNumber, "1234567890")
+		if let documentNumber = leg.documentNumber {
+			XCTAssertEqual(documentNumber.airlineNumeric, 14)
+			XCTAssertEqual(documentNumber.serialNumber, "1234567890")
+		} else {
+			return XCTFail("Document number missing")
+		}
 		XCTAssertNil(leg.selectee)
 		XCTAssertEqual(leg.internationalDocumentVerification, "1")
 		XCTAssertEqual(leg.marketingAirlineIATA, "AC")
@@ -85,8 +89,12 @@ class BoardingPassExamplev5Tests: XCTestCase {
 		XCTAssertEqual(leg.checkinSequence, "0025")
 		XCTAssertEqual(leg.passengerStatus, "1")
 
-		XCTAssertEqual(leg.documentAirlineNumeric, 57)
-		XCTAssertEqual(leg.documentNumber, "1234567890")
+		if let documentNumber = leg.documentNumber {
+			XCTAssertEqual(documentNumber.airlineNumeric, 57)
+			XCTAssertEqual(documentNumber.serialNumber, "1234567890")
+		} else {
+			return XCTFail("Document number missing")
+		}
 		XCTAssertNil(leg.selectee)
 		XCTAssertNil(leg.internationalDocumentVerification)
 		XCTAssertEqual(leg.marketingAirlineIATA, "AF")
@@ -138,8 +146,12 @@ class BoardingPassExamplev5Tests: XCTestCase {
 		XCTAssertEqual(leg.checkinSequence, "0027")
 		XCTAssertEqual(leg.passengerStatus, "1")
 
-		XCTAssertEqual(leg.documentAirlineNumeric, 14)
-		XCTAssertEqual(leg.documentNumber, "1234567890")
+		if let documentNumber = leg.documentNumber {
+			XCTAssertEqual(documentNumber.airlineNumeric, 14)
+			XCTAssertEqual(documentNumber.serialNumber, "1234567890")
+		} else {
+			return XCTFail("Document number missing")
+		}
 		XCTAssertNil(leg.selectee)
 		XCTAssertEqual(leg.internationalDocumentVerification, "1")
 		XCTAssertEqual(leg.marketingAirlineIATA, "AC")
@@ -162,8 +174,12 @@ class BoardingPassExamplev5Tests: XCTestCase {
 		XCTAssertEqual(leg.checkinSequence, "0002")
 		XCTAssertEqual(leg.passengerStatus, "1")
 
-		XCTAssertEqual(leg.documentAirlineNumeric, 14)
-		XCTAssertEqual(leg.documentNumber, "0987654321")
+		if let documentNumber = leg.documentNumber {
+			XCTAssertEqual(documentNumber.airlineNumeric, 14)
+			XCTAssertEqual(documentNumber.serialNumber, "0987654321")
+		} else {
+			return XCTFail("Document number missing")
+		}
 		XCTAssertNil(leg.selectee)
 		XCTAssertEqual(leg.internationalDocumentVerification, "1")
 		XCTAssertEqual(leg.marketingAirlineIATA, "AC")
@@ -197,8 +213,12 @@ class BoardingPassExamplev5Tests: XCTestCase {
 		XCTAssertEqual(leg.checkinSequence, "0025")
 		XCTAssertEqual(leg.passengerStatus, "1")
 
-		XCTAssertEqual(leg.documentAirlineNumeric, 57)
-		XCTAssertEqual(leg.documentNumber, "1234567890")
+		if let documentNumber = leg.documentNumber {
+			XCTAssertEqual(documentNumber.airlineNumeric, 57)
+			XCTAssertEqual(documentNumber.serialNumber, "1234567890")
+		} else {
+			return XCTFail("Document number missing")
+		}
 		XCTAssertNil(leg.selectee)
 		XCTAssertNil(leg.internationalDocumentVerification)
 		XCTAssertEqual(leg.marketingAirlineIATA, "AF")
@@ -221,8 +241,12 @@ class BoardingPassExamplev5Tests: XCTestCase {
 		XCTAssertEqual(leg.checkinSequence, "0002")
 		XCTAssertEqual(leg.passengerStatus, "1")
 
-		XCTAssertEqual(leg.documentAirlineNumeric, 12)
-		XCTAssertEqual(leg.documentNumber, "0987654321")
+		if let documentNumber = leg.documentNumber {
+			XCTAssertEqual(documentNumber.airlineNumeric, 12)
+			XCTAssertEqual(documentNumber.serialNumber, "0987654321")
+		} else {
+			return XCTFail("Document number missing")
+		}
 		XCTAssertEqual(leg.selectee, "0")
 		XCTAssertEqual(leg.internationalDocumentVerification, "1")
 		XCTAssertNil(leg.marketingAirlineIATA)
