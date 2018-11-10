@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2406548120E96A16007B3823 /* BPKDocumentNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2406548020E96A16007B3823 /* BPKDocumentNumber.swift */; };
+		244E150721978FDD00113995 /* RegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E150521978FBC00113995 /* RegressionTests.swift */; };
 		24AEAF8D2055151100311ED5 /* BoardingPassExamplev4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */; };
 		24AEAF8F205517F800311ED5 /* BoardingPassExamplev3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AEAF8E205517F800311ED5 /* BoardingPassExamplev3Tests.swift */; };
 		24B3F50B1FF3E06F002E489B /* BoardingPassKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B3F5091FF3E06F002E489B /* BoardingPassKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		2406548020E96A16007B3823 /* BPKDocumentNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPKDocumentNumber.swift; sourceTree = "<group>"; };
+		244E150521978FBC00113995 /* RegressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegressionTests.swift; sourceTree = "<group>"; };
 		24AEAF892054D45A00311ED5 /* BoardingPassKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BoardingPassKit.podspec; sourceTree = "<group>"; };
 		24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassExamplev4Tests.swift; sourceTree = "<group>"; };
 		24AEAF8E205517F800311ED5 /* BoardingPassExamplev3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassExamplev3Tests.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				24AEAF8E205517F800311ED5 /* BoardingPassExamplev3Tests.swift */,
 				24AEAF8B205514F200311ED5 /* BoardingPassExamplev4Tests.swift */,
 				24B3F51E1FFE9086002E489B /* BoardingPassExamplev5Tests.swift */,
+				244E150521978FBC00113995 /* RegressionTests.swift */,
 				24B3F5271FFE90C0002E489B /* Info.plist */,
 			);
 			path = Test;
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244E150721978FDD00113995 /* RegressionTests.swift in Sources */,
 				24AEAF8F205517F800311ED5 /* BoardingPassExamplev3Tests.swift in Sources */,
 				24AEAF8D2055151100311ED5 /* BoardingPassExamplev4Tests.swift in Sources */,
 				24B3F5331FFFCB09002E489B /* BaggageTagRangeExampleTests.swift in Sources */,

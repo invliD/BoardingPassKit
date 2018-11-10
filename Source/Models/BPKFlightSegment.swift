@@ -40,7 +40,9 @@ public class BPKFlightSegment {
 	public func parseConditionalFields(data: Data) throws {
 		let parser = BPKParser(data: data)
 
-		if let airlineNumeric = try parser.readNumber(3), let serialNumber = try parser.readString(10) {
+		let maybeAirlineNumeric = try parser.readNumber(3)
+		let maybeSerialNumber = try parser.readString(10)
+		if let airlineNumeric = maybeAirlineNumeric, let serialNumber = maybeSerialNumber {
 			documentNumber = BPKDocumentNumber(airlineNumeric: airlineNumeric, serialNumber: serialNumber)
 		}
 		selectee = try parser.readString(1)
