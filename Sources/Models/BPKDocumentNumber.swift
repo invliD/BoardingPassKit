@@ -1,3 +1,5 @@
+import Foundation
+
 public class BPKDocumentNumber {
 	public static let numericFormatter: NumberFormatter = {
 		let formatter = NumberFormatter()

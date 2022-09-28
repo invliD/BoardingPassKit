@@ -1,3 +1,5 @@
+import Foundation
+
 public class BPKBoardingPass {
 	public var baggageTagRanges: [BPKBaggageTagRange] = []
 	public var boardingPassIssueYear: UInt32?

@@ -1,3 +1,5 @@
+import Foundation
+
 public class BPKBaggageTagRange {
 	public var type: UInt32
 	public var airlineNumeric: UInt32

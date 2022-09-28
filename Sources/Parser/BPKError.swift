@@ -1,3 +1,5 @@
+import Foundation
+
 public enum BPKError: Error {
 	case cannotParseBool(String)
 	case cannotParseNumber(String)

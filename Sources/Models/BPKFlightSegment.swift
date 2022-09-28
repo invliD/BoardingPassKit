@@ -1,3 +1,5 @@
+import Foundation
+
 public class BPKFlightSegment {
     public var airlineData: Data?
     public var cabinCode: String

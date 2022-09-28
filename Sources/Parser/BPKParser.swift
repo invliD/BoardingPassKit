@@ -1,3 +1,5 @@
+import Foundation
+
 class BPKParser {
 	private var cursor = 0
 	private var data: Data
