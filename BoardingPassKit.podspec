@@ -12,12 +12,12 @@ Pod::Spec.new do |s|
 	s.license      = "MPL-2.0"
 	s.author       = "Sebastian Brückner"
 
-	s.ios.deployment_target = "8.0"
+	s.ios.deployment_target = "12.0"
 	# s.osx.deployment_target = "10.7"
 	# s.watchos.deployment_target = "2.0"
 	# s.tvos.deployment_target = "9.0"
 
-	s.swift_version = '4.2'
+	s.swift_version = '5.0'
 	s.source       = { :git => "https://github.com/invliD/BoardingPassKit.git", :tag => "#{s.version}" }
 	s.source_files = "Sources/**/*.swift"
 	s.requires_arc = true

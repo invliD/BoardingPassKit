@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
 	name: "BoardingPassKit",
+	platforms: [
+		.iOS(.v12)
+	],
 	products: [
 		.library(
 			name: "BoardingPassKit",
@@ -18,5 +21,6 @@ let package = Package(
 			name: "BoardingPassKitTests",
 			dependencies: ["BoardingPassKit"],
 			path: "Tests"),
-	]
+	],
+	swiftLanguageVersions: [.v5]
 )
